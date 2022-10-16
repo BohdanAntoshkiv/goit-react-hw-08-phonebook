@@ -7,7 +7,7 @@ export const AppStyled = styled.div`
     padding-left: 20px;
     padding-right: 20px;
     background-size: 20px 20px;
-    background-color: #f7ddb1;
+    background-color: #07f5e8;
     background-image: linear-gradient(
             to right,
             rgba(128, 128, 128, 0.367) 1px,

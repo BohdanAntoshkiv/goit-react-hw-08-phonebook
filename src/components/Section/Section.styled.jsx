@@ -7,5 +7,5 @@ export const SectionWrapp = styled.section`
 
 export const Title = styled.h2`
     margin-bottom: 24px;
-    color: #f688da;
+    color: #02aa31;
 `;

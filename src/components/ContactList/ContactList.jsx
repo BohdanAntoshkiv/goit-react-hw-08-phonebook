@@ -1,27 +1,24 @@
-import { Component } from 'react';
+// import { Component } from 'react';
 import PropTypes from 'prop-types';
 import { Contact, Button } from './ContactList.styled';
 
-export default class ContactList extends Component {
-    render() {
-        const { contacts, onDelete } = this.props;
-        return (
-            <ul>
-                {contacts.map(({ name, number, id }) => {
-                    return (
-                        <Contact key={id}>
-                            <span>
-                                {name}: {number}
-                            </span>
-                            <Button type="button" onClick={() => onDelete(id)}>
-                                Delete
-                            </Button>
-                        </Contact>
-                    );
-                })}
-            </ul>
-        );
-    }
+export default function ContactList({ contacts, onDelete }) {
+    return (
+        <ul>
+            {contacts.map(({ name, number, id }) => {
+                return (
+                    <Contact key={id}>
+                        <span>
+                            {name}: {number}
+                        </span>
+                        <Button type="button" onClick={() => onDelete(id)}>
+                            Delete
+                        </Button>
+                    </Contact>
+                );
+            })}
+        </ul>
+    );
 }
 
 ContactList.propTypes = {

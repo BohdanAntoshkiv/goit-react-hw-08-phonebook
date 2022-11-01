@@ -9,7 +9,7 @@ export default function Filter({ value, onChange }) {
         <FormStyled>
             <Label htmlFor="">Find contacts by name</Label>
             <Input
-                id={this.filterId}
+                id={filterId}
                 type="text"
                 name="filter"
                 value={value}

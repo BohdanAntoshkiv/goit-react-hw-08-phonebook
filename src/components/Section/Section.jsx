@@ -1,17 +1,14 @@
-import { Component } from 'react';
+// import { Component } from 'react';
 import PropTypes from 'prop-types';
 import { SectionWrapp, Title } from './Section.styled';
 
-export default class Section extends Component {
-    render() {
-        const { title, children } = this.props;
-        return (
-            <SectionWrapp>
-                <Title>{title}</Title>
-                {children}
-            </SectionWrapp>
-        );
-    }
+export default function Section({ title, children }) {
+    return (
+        <SectionWrapp>
+            <Title>{title}</Title>
+            {children}
+        </SectionWrapp>
+    );
 }
 
 Section.propTypes = {

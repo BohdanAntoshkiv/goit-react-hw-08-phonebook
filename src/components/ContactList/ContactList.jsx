@@ -1,26 +1,15 @@
-// import { Component } from 'react';
-import PropTypes from 'prop-types';
-import { Contact, Button } from './ContactList.styled';
+import { ListElement } from '../ListElement/ListElement';
+import useItemsSlice from 'redux/itemsSlice/itemsHook';
+import { StyledList } from './StyledContactList';
 
-export default function ContactList({ contacts, onDelete }) {
-    return (
-        <ul>
-            {contacts.map(({ name, number, id }) => {
-                return (
-                    <Contact key={id}>
-                        <span>
-                            {name}: {number}
-                        </span>
-                        <Button type="button" onClick={() => onDelete(id)}>
-                            Delete
-                        </Button>
-                    </Contact>
-                );
-            })}
-        </ul>
-    );
-}
+export const ContactList = () => {
+  const { filteredItems } = useItemsSlice();
 
-ContactList.propTypes = {
-    contacts: PropTypes.arrayOf(PropTypes.shape()).isRequired,
+  return (
+    <StyledList>
+      {filteredItems.map(contact => (
+        <ListElement key={contact.id} contact={contact} />
+      ))}
+    </StyledList>
+  );
 };

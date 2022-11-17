@@ -1,20 +1,23 @@
-// import { Component } from 'react';
 import { nanoid } from 'nanoid';
-import { Input, Label, FormStyled } from 'components/Form/Form.styled';
+import { StyledFilterDiv } from './StyledFilter';
+import useFilterSlice from 'redux/filterSlice/filterHook';
+const filterId = nanoid();
 
-export default function Filter({ value, onChange }) {
-    const filterId = nanoid();
+export const Filter = () => {
+  const { filter, setFilter } = useFilterSlice();
 
-    return (
-        <FormStyled>
-            <Label htmlFor="">Find contacts by name</Label>
-            <Input
-                id={filterId}
-                type="text"
-                name="filter"
-                value={value}
-                onChange={onChange}
-            />
-        </FormStyled>
-    );
-}
+  return (
+    <StyledFilterDiv>
+      <label htmlFor={filterId}>Find contacts by name</label>
+      <input
+        onChange={e => {
+          setFilter(e.target.value);
+        }}
+        id={filterId}
+        type="text"
+        value={filter}
+        name="filter"
+      />
+    </StyledFilterDiv>
+  );
+};

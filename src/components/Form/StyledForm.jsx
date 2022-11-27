@@ -12,10 +12,6 @@ export const StyledForm = styled.form`
     margin-bottom: 20px;
     border-radius: 5px;
     padding: 20px;
-    /* border: 2px solid grey;
-  margin-bottom: 20px;
-  border-radius: 5px;
-  padding: 15px; */
     label {
         display: block;
         margin-bottom: 10px;

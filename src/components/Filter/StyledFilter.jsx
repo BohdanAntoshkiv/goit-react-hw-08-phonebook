@@ -5,9 +5,6 @@ export const StyledFilterDiv = styled.div`
     justify-content: space-between;
     align-items: center;
     margin-bottom: 15px;
-    label {
-        /* margin-bottom: 15px; */
-    }
     input {
         display: block;
         height: 25px;

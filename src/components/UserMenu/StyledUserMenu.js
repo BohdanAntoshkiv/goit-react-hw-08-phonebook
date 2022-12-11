@@ -11,7 +11,7 @@ export const StyledDiv = styled.div`
     cursor: pointer;
     transition: ease-in 200ms;
     :hover {
-      border: 2px solid rgb(78, 175, 208);
+      border: 1px solid rgb(78, 175, 208);
       background-color: #4ca3e0;
     }
   }

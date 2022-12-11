@@ -7,13 +7,14 @@ export const StyledLi = styled.li`
     margin: 10px 0;
     padding: 20px;
     background-color: #f3f98c;
-    border-radius: 5px #4eafd0;
+    border-color: #4eafd0;
+    border-radius: 5px;
     transition: ease-in 100ms;
     &:hover {
         background-color: #8cdcf9;
     }
     button {
-        display: block;
+        display: flex;
         padding: 10px;
         border-radius: 5px;
         border: 1px solid #4eafd0;

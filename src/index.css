@@ -6,7 +6,7 @@ body {
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
     background-color: rgb(247, 221, 177);
-    background-image: linear-gradient(to right top, #ffd3ff, #ffcefc, #ffc9f8, #ffc3f5, #ffbef1, #eec4fa, #decafe, #cfcfff, #b0deff, #94edff, #8ef8f9, #a7ffde);
+    background-image: linear-gradient(to right top, #ebf5e6, #d8ebcd, #c4e1b5, #b1d79c, #9dce83, #89c46a, #76ba51, #62b039, #4fa620, #3b9c07);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }

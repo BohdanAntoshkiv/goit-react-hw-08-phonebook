@@ -28,7 +28,6 @@ export const StyledForm = styled.form`
         }
     }
     button {
-        display: block;
         padding: 10px;
         border-radius: 5px;
         border: 1px solid #4eafd0;

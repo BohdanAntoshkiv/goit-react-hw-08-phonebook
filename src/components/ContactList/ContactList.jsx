@@ -9,11 +9,11 @@ export const ContactList = () => {
     <>
       {error && (
         <p>
-            Something went wrong! Please refresh page and try again...
+          Oops! Something went wrong! Refresh page and try again, please.
         </p>
       )}
       {isLoading ? (
-        <b>Downloading contacts...</b>
+        <b>Loading...</b>
       ) : (
         <StyledList>
           {filteredItems.map(contact => (
